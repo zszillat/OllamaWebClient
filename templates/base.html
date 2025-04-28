@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Local ChatGPT{% endblock %}</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+    {% block css %}
+    {% endblock %}
+</head>
+<body>
+    <div id="container">
+
+        <!-- Sidebar -->
+        <div id="sidebar">
+
+            <!-- Top Control Panel -->
+            <div class="top-control-panel control-panel" id="topControlPanel">
+                <button class="btn-sidebar" id="btnNewChat">
+                    New Chat
+                </button>
+            </div>
+
+            <!-- Chats -->
+            <div class="chats" id="chats">
+                <h2>Conversations</h2>
+                <div class="chats-wrapped">
+                    <div class="samplebox">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                    <div class="samplebox">Lorem, ipsum dolor.</div>
+                    <div class="samplebox">sit amet. Lorem, ipsum dolor.</div>
+                    <div class="samplebox">Lorem ipsum dolor sit, amet consectetur adipisicing.</div>
+                    <div class="samplebox">Quae, enim!</div>
+                    <div class="samplebox">Lorem ipsum dolor adipisicing elit.</div>
+                    <div class="samplebox">Lorem, ipsum dolor.</div>
+                    <div class="samplebox">sit amet. Lorem, ipsum dolor.</div>
+                    <div class="samplebox">Lorem ipsum dolor sit, amet consectetur adipisicing.</div>
+                    <div class="samplebox">Quae, enim!</div>
+                    <div class="samplebox">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                    <div class="samplebox">Lorem, ipsum dolor.</div>
+                    <div class="samplebox">sit amet. Lorem, ipsum dolor.</div>
+                    <div class="samplebox">Lorem ipsum dolor sit, amet consectetur adipisicing.</div>
+                    <div class="samplebox">Quae, enim!</div>
+                </div>
+            </div>
+
+            <!-- Bottom Control Panel -->
+            <div class="bottom-control-panel control-panel" id="bottomControlPanel">
+                <button class="btn-settings">Settings</button>
+            </div>
+
+        </div>
+
+        <!-- Main Section (Right Side) -->
+        <div class="main" id="main">
+
+            <!-- Top Bar -->
+            <div id="top-bar">
+                
+                <!-- Minimize Sidebar -->
+                <div class="toggle-sidebar-wrapper">
+                    <button id="toggleSidebar" class="btn-icon">
+                        <img src="/static/images/menu.svg" alt="Menu">
+                    </button>
+                </div>
+
+                {% block topbar %}
+                {% endblock %}
+            </div>
+
+            <div id="main-content">
+                {% block content %}
+                {% endblock %}
+            </div>
+
+
+        </div>
+    </div>
+
+    {% block scripts %}
+    {% endblock %}
+    <script src="static/js/base.js"></script>
+
+    </body>
+</html>

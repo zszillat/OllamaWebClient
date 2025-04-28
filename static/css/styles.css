@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    /* Composition */
+    height: 100vh;
+    display: flex;
+
+    /* Styling */
+    font-family: 'Söhne', 'Helvetica Neue', Arial, sans-serif;
+    background-color: #212121;
+    color: #ffffff;
+}
+#container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+button {
+    background-color: #3b3b3b;
+    color: #fff;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+button:hover {
+    background-color: #505050;
+}
+
+/* SIDEBAR */
+#sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #171717;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: width 300ms ease, padding 300ms ease;
+    overflow: hidden;
+}
+#sidebar.collapsed {
+    width: 0;
+    padding: 0;
+}
+
+/* Formatting to prevent elements wrapping upon closing */
+#sidebar > .top-control-panel,
+#sidebar > .bottom-control-panel {
+  flex-shrink: 0;
+}
+/* #sidebar h2, */
+#sidebar .samplebox,
+#sidebar {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+}
+
+/* Chats */
+.chats {
+    flex: 1 1 auto;
+    min-height: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    box-sizing: border-box;
+}
+.chats h2 {
+    margin-bottom: 0.5rem;
+}
+.chats h2 {
+    white-space: normal;
+    overflow: visible;
+    text-overflow: initial;
+}
+  
+.chats-wrapped {
+    flex: 1 1 auto;
+    min-height: 0;       
+    overflow-y: auto;
+    width: 100%;
+    box-sizing: border-box;
+    padding-right: 0.5rem;
+}
+
+.chats-wrapped > * {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+}
+.chats-wrapped > *:hover {
+    background-color: rgba(255, 255, 255, 0.06);
+    border-radius: 6px;
+    cursor: pointer;
+}
+#sidebar .chats .samplebox {
+    padding: 0.5rem;
+}
+
+/* Control Panels */
+.control-panel {
+    width: 100%;
+    height: 70px;
+    border-top: 1px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.control-panel > button {
+    width: 90%;
+}
+
+/* MAIN */
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #212121;
+    transition: flex 300ms ease, width 300ms ease;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Topbar */
+#top-bar {
+    background-color: #212121;
+    border-bottom: 1px solid #333;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.toggle-sidebar-wrapper {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-icon {
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border-radius: 10px; */
+    transition: background-color 50ms linear;
+    width: 75%;
+    height: 75%;
+}
+.btn-icon:hover {
+    background-color: rgba(255, 255, 255, 0.06);
+}
+.btn-icon > img {
+    height: 120%;
+} 
