@@ -1,0 +1,113 @@
+/* TOPBAR */
+.preset-select {
+    position: relative;
+    width: 380px;          
+}
+.preset-select .selected {
+    height: 60px;
+    line-height: 60px;
+    padding: 0 16px;
+    cursor: pointer;
+    user-select: none;
+}
+.preset-select .selected:hover {
+    background-color: #ffffff06;
+}
+.preset-select .preset-options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    max-height: 0;
+    overflow: hidden;
+    background: #2a2a2a;
+    border-radius: 0 0 6px 6px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: max-height 0.3s ease;
+    z-index: 10;
+}
+.preset-select .option {
+    height: 40px;
+    line-height: 40px;
+    padding: 0 16px;
+    font-size: 14px;
+    cursor: pointer;
+}
+  
+  .preset-select .option:hover {
+    background-color: #3a3a3a;
+  }
+  
+/* Main Chat*/
+.main-chat {
+    background-color: red;
+    width: 100%;
+    max-width: 800px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.messages-container {
+    background-color: green;
+    width: 100%;
+    flex: 6; /* Height ratio to take up */
+    overflow-y: auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.chat-bar-container {
+    background-color: blue;
+    width: 100%;
+    flex: 5; /* Height ratio to take up */
+    overflow-y: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    box-sizing: border-box;
+}
+
+/* Search Bar Section */
+.chat-bar-wrapper {
+    background-color: #303030;
+    min-height: 100px;
+    max-height: 250px;
+    width: 100%;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 16px;
+    
+}
+.chat-bar {
+    width: 95%;
+    min-height: 50px;
+    max-height: 155px;
+    background-color: rgb(230, 0, 255);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3px;
+}
+.chat-bar textarea {
+    resize: none;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    width: 99%;
+    height: 100%;
+    background-color: orangered;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    line-height: 1.4;
+    max-height: 150px;
+}
+.chat-toolbar {
+    width: 95%;
+    height: 50px;
+    background-color: green;
+    box-sizing: border-box;
+}

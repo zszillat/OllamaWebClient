@@ -8,7 +8,21 @@
 <!-- TOPBAR -->
 {% block topbar %}
 
-<!-- Custom Dropdown for Model Preset Selection -->
+<div class="preset-select" id="presetSelect">
+    <div class="selected" id="selectedPreset">
+        <span>
+            granite-code:8b
+        </span>
+    </div>
+    <div class="preset-options">
+        <div class="option">nollama/mythomax-l2-13b:Q4_K_M</div>
+        <div class="option">llama3:latest</div>
+        <div class="option">qwen:7b-chat</div>
+        <div class="option">nomic-embed-text:latest</div>
+        <div class="option">deepseek-coder:6.7b</div>
+    </div>
+</div>
+  
       
 {% endblock %}
 
@@ -18,9 +32,29 @@
 {% block content %}
     <div class="main-chat" id="mainChat">
 
+        <!-- MESSAGES SECTION -->
+        <div class="messages-container"></div>
+
+        <!-- SEARCH BAR SECTION -->
+        <div class="chat-bar-container">
+            
+            <div class="chat-bar-wrapper">
+                    <!-- Chat Bar -->
+                    <div class="chat-bar">
+                        <textarea id="chat-input" placeholder="Ask anything…"></textarea>
+                    </div>
+
+                    <!-- Toolbar -->
+                    <div class="chat-toolbar">
+                        <!-- This is a work in progress -->
+                    </div>
+
+            </div>
+        
+        </div>
     </div>
 {% endblock %}
 
 {% block scripts %}
-    <script src="chat.js"></script>
+    <script src="static/js/chat.js"></script>
 {% endblock %}
