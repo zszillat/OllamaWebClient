@@ -40,12 +40,12 @@ document.addEventListener('DOMContentLoaded', () => {
       opts.forEach(o => optionsContainer.appendChild(o));
     }
 
-    // CHATBAR
-    // Auto-grow the textarea height to fit content
-    const textarea = document.getElementById('chat-input');
-    textarea.addEventListener('input', () => {
-      textarea.style.height = 'auto';               // reset height
-      textarea.style.height = textarea.scrollHeight + 'px';
-    });
+    // // CHATBAR
+    // // Auto-grow the textarea height to fit content
+    // const textarea = document.getElementById('chat-input');
+    // textarea.addEventListener('input', () => {
+    //   textarea.style.height = 'auto';               // reset height
+    //   textarea.style.height = textarea.scrollHeight + 'px';
+    // });
   });
   

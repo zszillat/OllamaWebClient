@@ -33,22 +33,42 @@
     <div class="main-chat" id="mainChat">
 
         <!-- MESSAGES SECTION -->
-        <div class="messages-container"></div>
+        <div class="messages-container">
+            <div class="message-user">
+                <div class="message">write me a short story about bees</div>
+            </div>
+
+            <div class="message-llm">
+                <div class="message">The dawn sun drifted through the orchard’s apple blossoms, warming the dew-speckled petals and stirring a gentle hum in the air. In the heart of an old hollow oak, a young worker bee named Lila unfurled her wings for the very first forage. Her sisters—veteran foragers with stripes dulled by years of sun and pollen—greeted her with patient buzzes and guiding dances. Today, Lila would learn how to read the language of flowers.
+
+                    Flying low among the blossoms, Lila felt the soft tickle of pollen against her legs. She hovered beside a blossom heavy with nectar, dipping her tongue in and savoring the sweet reward of her labor. Nearby, a bee elder performed the “waggle dance,” wiggling her body in a figure-eight to show the best patch of golden daffodils just beyond the creek. Lila watched, memorizing the angle of the dance and the vigor of each wiggle. Trusting the colony’s teachings, she set off in a smooth, purposeful arc across the orchard floor.
+                    
+                    By mid-afternoon, Lila returned laden with bright yellow pollen sacs, her wings humming with quiet pride. Inside the hive, the colony greeted her with welcoming buzzes as she shared her harvest. The young bee elder, once nervous about her first flight, now basked in the warm gratitude of her hive sisters. Together, they built honeycomb walls thicker than before, ensuring the brood’s safety and the spring’s bounty. Outside, blossoms swayed and the orchard thrummed with life—proof that even the smallest bee, guided by kindness and community, could help the entire world blossom.
+                </div>
+            </div>
+
+            <div class="user-message">
+                <div class="message">now tell me one about a dog</div>
+            </div>
+
+            <div class="message-llm">
+                <div class="message">The golden afternoon light filtered through the living room window as Jasper, a scruffy brown terrier with one floppy ear and a perpetually wagging tail, nosed a worn tennis ball toward Emma’s feet. She had been feeling blue after a long day of work, but Jasper knew exactly what to do. With an eager bark and a hopeful glance, he dropped the ball at her feet and tilted his head, as if saying, “Come on—let’s play.”
+
+                    Emma couldn’t resist. She scooped up the ball and tossed it across the carpeted floor. Jasper dashed after it, his paws skidding slightly before he pounced triumphantly. When he returned, he nudged the ball into her hand and flopped onto his side, tongue lolling in a happy grin. Emma laughed, ruffling his soft fur. In that simple game—just a dog, a ball, and the bond they shared—the world felt lighter, brighter, and full of small, perfect moments.
+                </div>
+            </div>
+
+        </div>
 
         <!-- SEARCH BAR SECTION -->
         <div class="chat-bar-container">
-            
             <div class="chat-bar-wrapper">
-                    <!-- Chat Bar -->
-                    <div class="chat-bar">
-                        <textarea id="chat-input" placeholder="Ask anything…"></textarea>
-                    </div>
+                <textarea id="chat-input" placeholder="Ask anything…"></textarea>
 
-                    <!-- Toolbar -->
-                    <div class="chat-toolbar">
-                        <!-- This is a work in progress -->
-                    </div>
-
+                <!-- Toolbar -->
+                <div class="chat-toolbar">
+                    <button class="send" id="sendPrompt">Send</button>
+                </div>
             </div>
         
         </div>
