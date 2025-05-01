@@ -2,14 +2,32 @@
 
 {% block title %}Settings{% endblock %}
 {% block css %}
-<link rel="stylesheet" href="static/settings.css">
+<link rel="stylesheet" href="static/css/settings.css">
 {% endblock %}
 
 {% block content %}
 <!-- Settings Panel -->
-<div class="main-settings" id="mainSettings">
+<div class="main-settings">
+    <div class="settings-list" id="settingsList">
 
+    </div>
+    <div class="settings-presets">
+        <h1>Presets</h1>
+        <div class="preset-list" id="presetList">
+            <!-- PRESETS -->
+            <div class="preset">
+                Coder
+            </div>
+        </div>
+        <div class="preset-list" id="presetList">
+            <!-- PRESETS -->
+            <div class="preset">
+                default
+            </div>
+        </div>
+    </div>   
 </div>
+
 
 {% endblock %}
 
