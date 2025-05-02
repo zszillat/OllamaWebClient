@@ -1,0 +1,15 @@
+{
+  "baseURL": {
+    "currentValue": "http://10.0.0.1:11434",
+    "id": "baseURL",
+    "inputType": "text",
+    "label": "Base URL (e.g. http://localhost:11434)"
+  },
+  "defaultPreset": {
+    "currentValue": "default",
+    "id": "defaultPreset",
+    "inputType": "select",
+    "label": "Default Preset",
+    "options": []
+  }
+}

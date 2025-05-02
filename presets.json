@@ -1,0 +1,5 @@
+[
+    {"id":"default", "label":"Default", "model":"tinyllama"},
+    {"id":"chat", "label":"Chat", "model":"llama3.1:8b"},
+    {"id":"coder", "label":"Coder", "model":"deepseek-coder:6.7b"}
+]

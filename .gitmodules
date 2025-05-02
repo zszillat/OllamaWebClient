@@ -1,0 +1,3 @@
+[submodule "OllamaPythonClient"]
+	path = OllamaPythonClient
+	url = https://github.com/zszillat/OllamaPythonClient.git

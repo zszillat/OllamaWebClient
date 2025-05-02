@@ -30,6 +30,11 @@
     align-items: center;
     border: grey 1px solid;
     border-radius: 10px;
+    justify-content: space-between;
+}
+
+.preset > .model {
+    color: gray;
 }
 .preset:hover {
     background-color: #666666;

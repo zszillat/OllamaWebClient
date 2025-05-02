@@ -11,20 +11,20 @@
     <div class="settings-list" id="settingsList">
 
     </div>
+
+    <!-- PRESETS -->
     <div class="settings-presets">
         <h1>Presets</h1>
+
         <div class="preset-list" id="presetList">
-            <!-- PRESETS -->
+            {% for preset in presets %}
             <div class="preset">
-                Coder
+                <p>{{ preset.label }}</p>
+                <p class="model" >{{ preset.model }}</p>
             </div>
+            {% endfor %}
         </div>
-        <div class="preset-list" id="presetList">
-            <!-- PRESETS -->
-            <div class="preset">
-                default
-            </div>
-        </div>
+
     </div>   
 </div>
 
@@ -32,5 +32,12 @@
 {% endblock %}
 
 {% block scripts %}
+    <!-- Bootstrap the data into a global JS variable -->
+    <script>
+        window.APP_DATA = {
+            settings: {{ settings | tojson }},
+            presets:  {{ presets  | tojson }}
+        };
+    </script>
     <script src="/static/js/settings.js"></script>
 {% endblock %}
